@@ -1,0 +1,49 @@
+body {
+  background: rgb(15, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 0, 36, 1) 0%,
+    rgba(41, 9, 121, 1) 49%,
+    rgba(51, 0, 162, 1) 100%
+  );
+  color: lightgray;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  justify-content: center;
+}
+.title h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+}
+.subtitle {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  justify-content: center;
+}
+.subtitle h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+}
+h3 {
+  border-bottom: 5px double grey;
+  text-align: center;
+}
+.lists {
+  margin-left: 5vw;
+  max-width: 1600px;
+}
+@media screen and (min-width: 800px) {
+  .lists {
+    display: grid;
+    grid-template-columns: 25vw 25vw;
+    gap: 2rem;
+  }
+}
